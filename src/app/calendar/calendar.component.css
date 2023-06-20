@@ -1,0 +1,14 @@
+div{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+
+
+}
+mat-calendar{
+  width: 500px;
+  background-color: white;
+}

@@ -1,0 +1,154 @@
+{
+  "uuid": "98497193-88d2-449b-8856-4e477df71139",
+  "lastMigration": 27,
+  "name": "Task api mocks",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "544a3190-cff0-4ee0-84bf-9af8c477264e",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "tasks/:date",
+      "responses": [
+        {
+          "uuid": "38385597-2865-41b6-abe5-4987f6553807",
+          "body": "[\n   {\"title\":\"Visit Ann\"},\n    {\"title\":\"Call dad\"},\n    {\"title\":\"Go to the gym\"},\n    {\"title\":\"Wash the dishes\"},\n    {\"title\":\"Shop for the party\"}\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "a690a372-273e-4f23-8c19-c4ef56cc0353",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "tasks/:date",
+      "responses": [
+        {
+          "uuid": "15ffd1ef-bb78-4c5a-9592-7c7ff7277135",
+          "body": "{\n  \n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "6911717c-ea3e-44fa-bcab-4c0959f72b00",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "tasks/:date/:title",
+      "responses": [
+        {
+          "uuid": "c78c2ce5-8e50-48c2-95be-eceaecadbbb3",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "544a3190-cff0-4ee0-84bf-9af8c477264e"
+    },
+    {
+      "type": "route",
+      "uuid": "a690a372-273e-4f23-8c19-c4ef56cc0353"
+    },
+    {
+      "type": "route",
+      "uuid": "6911717c-ea3e-44fa-bcab-4c0959f72b00"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
